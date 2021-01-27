@@ -1,13 +1,9 @@
 $primary-color: #60a391;
 $secondary-color: #f1de81;
 $terciary-color: #491020;
-@font-face {
-    font-family: lobster;
-    src: url(Lobster-Regular.ttf);
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap');
 body {
-    font-family: lobster;
+    font-family: 'Alegreya', serif;
     color: $terciary-color;
     background-color: #ffffff;
     // background-color: #f1de80;
@@ -21,7 +17,7 @@ body {
 li:hover {
     background-color: $secondary-color;
     border-radius: 5px;
-    color: whitesmoke;
+    color: $terciary-color !important;
 }
 
 a {
@@ -34,6 +30,10 @@ a {
     color: rgba(255, 255, 255, 1);
 }
 
+h5 {
+    font: bold;
+}
+
 .jumbotron {
     background-image: url(jumbo.jpg);
     background-size: cover;
@@ -44,7 +44,7 @@ a {
 
 .line {
     height: 10px;
-    background-color: $primary-color;
+    background-color: $secondary-color;
 }
 
 ul {
@@ -81,4 +81,31 @@ footer {
 
 h3 {
     color: white;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: $secondary-color;
+    border: none;
+    color: $terciary-color;
+}
+
+.whatsapp {
+    cursor: pointer;
+    top: 85%;
+    left: 1%;
+    position: fixed;
+}
+
+.texto {
+    font-size: 20px;
+}
+
+hr {
+    border: 2px;
+    color: $terciary-color;
 }

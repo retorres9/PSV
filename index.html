@@ -9,31 +9,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/ffb992c10a.js" crossorigin="anonymous"></script>
     <title>Panadería, Repostería y Heladería "San Vicente"</title>
 </head>
 
 <body>
-    <nav class=" justify-content-md-between navbar navbar-expand-sm navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Maria</a>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <a style="z-index: 1; width: 90px;" class="navbar-brand ml-5" href="#"><img src="dist/css/logo.svg" class="img-fluid" alt=""></a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item p-2">
-                    <a class="nav-link" href="#">Inicio</a>
+            <ul class="navbar-nav nav mr-auto mt-2 mt-lg-0 justify-content-end">
+                <li class="nav-item p-2 ml-5">
+                    <a class="nav-link" href="#"><b>Inicio</b></a>
                 </li>
-                <li class="nav-item p-2">
-                    <a class="nav-link" href="#">Productos</a>
+                <li class="nav-item p-2 ml-5">
+                    <a class="nav-link" href="#nosotros"><b>Nosotros</b></a>
                 </li>
-                <li class="nav-item p-2">
-                    <a class="nav-link" href="#">Nosotros</a>
+                <li class="nav-item p-2 ml-5">
+                    <a class="nav-link" href="#productos"><b>Productos</b></a>
                 </li>
-                <li class="nav-item p-2">
-                    <a class="nav-link" href="#">Contáctanos</a>
+                <li class="nav-item p-2 ml-5">
+                    <a class="nav-link" href="#"><b>Contáctanos</b></a>
                 </li>
-
             </ul>
+
+            <a class="align-middle" href="#"><img src="dist/css/facebook.svg" width="30px" alt="" srcset=""></a>
+
         </div>
     </nav>
     <div class="jumbotron mb-0">
@@ -42,58 +46,96 @@
 
     </div>
 
-    <div class="container mt-5 mb-5">
+    <div class="container mt-5 mb-5" id="nosotros">
         <div class="card justify-content-center">
             <div class="card-header text-center">
-                Nosotros
+                <b>Nosotros</b>
             </div>
             <div class="card-body">
                 <div class="row">
                     <div class="col-sm-12 col-lg-6">
                         <img class="img-fluid polaroid" width="100%" src="dist/css/panadero.jpg" alt="">
                     </div>
-                    <div class="col-sm-12 col-lg-6 text-right mt-sm-5">
+                    <div class="col-sm-12 col-lg-6 text-right card-other align-self-center">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Est veritatis expedita perferendis iusto illum reiciendis, eveniet aliquam totam dolorum obcaecati nulla quisquam earum aliquid! Delectus, temporibus. Laudantium temporibus ratione commodi.
                     </div>
                 </div>
-                <!-- <h4 class="card-title">Title</h4>
-                <p class="card-text">Text</p> -->
             </div>
         </div>
     </div>
 
-    <div class="container align-content-center mb-5">
+    <div class="container align-content-center mb-5" id="productos">
         <div class="card">
             <div class="card-header text-center">
-                Nuestros Productos
+                <b>Nuestros Productos</b>
             </div>
-            <div class="card-body d-flex justify-content-around">
-                <div class="row">
-                    <div class="col-sm-12 col-lg-3 offset-sm-0 mb-3">
-                        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-6 col-lg-4 offset-sm-0 mb-3 justify-content-center">
+                        <div class="card card-other" style="width: auto;">
                             <img class="card-img-top" src="dist/css/pandulce.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title"><b>Pan de Dulce</b></h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-lg-3 offset-sm-0 offset-lg-1 mb-3">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-sm-12 col-md-6 col-lg-4 offset-sm-0 offset-lg-0 mb-3">
+                        <div class="card card-other" style="width: auto;">
                             <img class="card-img-top" src="dist/css/pandesal.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title"><b>Pan de Sal</b></h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 col-lg-3 offset-sm-0 offset-lg-1">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-sm-12 col-md-6 col-lg-4 offset-sm-0 offset-lg-0">
+                        <div class="card card-other" style="width: auto;">
                             <img class="card-img-top" src="dist/css/roscas.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title"><b>Roscas</b></h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 offset-sm-0 mb-3 justify-content-center">
+                        <div class="card card-other" style="width: auto;">
+                            <img class="card-img-top" src="dist/css/pastel-capitan.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Pan de Dulce</b></h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 offset-sm-0 offset-lg-0 mb-3">
+                        <div class="card card-other" style="width: auto;">
+                            <img class="card-img-top" src="dist/css/pastel-flores.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Pan de Sal</b></h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 offset-sm-0 offset-lg-0">
+                        <div class="card card-other" style="width: auto;">
+                            <img class="card-img-top" src="dist/css/pastel-princesa.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Roscas</b></h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 offset-sm-0 offset-lg-0">
+                        <div class="card card-other" style="width: auto;">
+                            <img class="card-img-top" src="dist/css/pastel-princesa-sofia.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Roscas</b></h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
@@ -106,9 +148,9 @@
     </div>
 
     <div class="container mb-4">
-        <div class="card">
+        <div class="card card-other">
             <div class="card-header text-center">
-                Ubícanos
+                <b>Ubícanos</b>
             </div>
             <div class="row">
                 <div class="col-lg-6 mb-2 ml-2">
@@ -117,23 +159,43 @@
                             frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>></iframe>
                     </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 align-self-center">
                     <div class="card-body">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, quod. Consequatur ab incidunt obcaecati soluta nam quidem inventore, accusamus quam laudantium modi ut ea, illo vitae. Exercitationem ipsum tempora consectetur!
+                        <div class="row">
+                            <div class="col-sm-2 d-flex flex-row text-center">
+                                <i class="fas fa-map-marked-alt fa-3x p-2"></i>
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="p-2 texto mb-0">Sucre y Gonazales Suarez</p>
+                            </div>
+                            <hr style="border: 20px">
+                            <div class="col-sm-2 d-flex flex-row" style="text-align: center;">
+                                <i class="fas fa-mobile fa-3x p-2 text-center"></i>
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="p-2 texto mb-0">0993048204</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=593980297557&fbclid=IwAR36ZyR2_3a4SLCiSADq3NBmOOE5tV9KSebZqtFaplz50wWTsOQWH4aGjXs" target="_blank" rel="noopener noreferrer">
+            <img src="dist/css/whatsapp.svg" width="70px" alt="">
+        </a>
+
+    </div>
 
     <footer>
         <div class="container">
-            <h3>&copy; Todos los derechos reservados</h3>
-            <a href="" class="float-right"><img src="dist/css/facebook.svg" style="width: 15px;" alt=""></a>
-            <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+            <h3 class="copy" style="font-size: 12px;">&copy; Todos los derechos reservados</h3>
+            <a href="https://www.facebook.com/San-Vicente-Panader%C3%ADa-pasteler%C3%ADa-y-helader%C3%ADa-625587901403290" target="_blank" class="float-right"><img src="dist/css/facebook.svg" style="width: 15px;" alt=""></a>
+            <div style="font-size: 7px;">Iconos diseñados por <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
         </div>
     </footer>
-
+    <script src="index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
